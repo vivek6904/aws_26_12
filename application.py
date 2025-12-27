@@ -1,0 +1,14 @@
+from flask import Flask
+
+application = Flask(__name__)
+
+@application.route("/")
+def home():
+    return "🚀 CI/CD Success! Deployed via CodePipeline → Elastic Beanstalk"
+
+@application.route("/health")
+def health():
+    return "OK"
+
+if __name__ == "__main__":
+    application.run(host="0.0.0.0", port=8080)
