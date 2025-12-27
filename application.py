@@ -4,8 +4,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def home():
-    return "🚀 CI/CD Success! Deployed via CodePipeline → Elastic Beanstalk
-    vivek wadher"
+    return "🚀 CI/CD Success! Deployed via CodePipeline → Elastic Beanstalk vivek wadher"
 
 @application.route("/health")
 def health():
