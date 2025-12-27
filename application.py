@@ -8,7 +8,7 @@ def home():
 
 @application.route("/health")
 def health():
-    return "OK"
+    return "OK the cicid is healthy!"
 
 if __name__ == "__main__":
     application.run(host="0.0.0.0", port=8080)
